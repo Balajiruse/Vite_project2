@@ -6,10 +6,12 @@ import DocAdd from "./Pages/DocAdd";
 import DocEdit from "./Pages/DocEdit";
 import { useEffect, useState } from "react";
 import NoPage from "./Pages/NoPage";
-import { AppState } from "./Contex.jsx/AppContext";
+import { AppState } from "./Contex.jsx/AppContext.jsx";
 import { getAllDoctor } from "./helpers/helper.js";
-import StatePage from "./Pages/StatePgae.jsx";
+import StatePage from "./Pages/StatePage.jsx";
 import CallBackPage from "./Pages/CallbackPage.jsx";
+import Login from "./Pages/Login.jsx";
+
 function App() {
   const [doctorData, setDoctordata] = useState();
   useEffect(() => {
@@ -42,7 +44,10 @@ function App() {
           }
         />
         <Route path="/state" element={<StatePage />} />
+
         <Route path="/callback" element={<CallBackPage />} />
+
+        <Route path="/login" element={<Login />} />
 
         <Route path="*" element={<NoPage />} />
       </Routes>

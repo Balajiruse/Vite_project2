@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
+import RegsiterForm from "../componetents/RegsiterForm";
 import WorkSpace from "../componetents/WorkSpace";
-import State from "../componetents/State";
 
-const StatePage = () => {
+const Login = () => {
   return (
     <div>
       <WorkSpace>
-        <State />
+        <RegsiterForm />
       </WorkSpace>
     </div>
   );
 };
 
-export default StatePage;
+export default Login;

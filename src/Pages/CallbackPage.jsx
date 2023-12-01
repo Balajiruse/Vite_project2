@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
-import WorkSpace from "../Components/WorkSpace";
-import Callback from "../Components/Callback";
+import WorkSpace from "../componetents/WorkSpace";
+import Callback from "../componetents/Callback";
 
 const CallBackPage = () => {
   return (
